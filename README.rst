@@ -1,3 +1,3 @@
-Advent of Code helper
-=====================
+Advent of Code helpers
+======================
 Advent of Code helper functions

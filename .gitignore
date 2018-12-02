@@ -7,6 +7,11 @@ ENV/
 env.bak/
 venv.bak/
 
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+
 # Intellij
 .idea
 *.iml
