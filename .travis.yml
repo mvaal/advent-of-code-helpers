@@ -1,0 +1,15 @@
+language: python
+python:
+  - "2.7"
+  - "3.6"
+install:
+  - setup.py install
+script:
+  - nose2
+deploy:
+  provider: pypi
+  user: mvaal
+  password:
+    secure: vX7NF56i7iHXrdq5860oppJqY3juyM8t2szzdOB/FdekYy7fkgRBqRnBQ/BNZ9o6i8wtY+8T5OcBQPKy0ftXrVquyZ3cJp7fUbpnWcu66Z/Kg02DSB0D5Cr9SXqAog7yZum+LQS9V1ruXUu9y9OdgxQlgmCPMjPChKpKzBXS7XTsZM2IvMXOkgHgX7V8fKO++C5dgtqXTmOAEyhd4OIVtHMpYDLA8IUxpatvyu2L3PUpY/p8WdR/nU7cutTx+VfJxicGl+XtsvdQ+C4KmqnIM1Bnohf9OObMYS93v5tUWL0t993PXv/DE4y/do5NI21FA8moQQIl3oiktfEHG1vlLwNrNY4gzMljszCjiqMMV+n4wqph1MFgECBlEdSPbZAyFzFpvCINK4r0lnncIJPAyhakx8AxAWWOZR7d+It2qdi0XKuZ4JGVZWl+57YxrFMa3gnF1T6YaE7E8nchVZ+ORoioW//jlIWn999Twi+8ISh3o2WIN9migw1rd8Di683RJAk8IsqRG7ckt8XFD5NvmRkPd7/AcvAVDaUouR/0S6zprDkiQIb8bE7GrHXcQXzvu2JXj9m/lq/bdCU1ze+lNgOifiY7QvrBm9sdEABZmHZMiaegq5CZZkBtuVRKFIfyeB+xNlW+MMrkqvuc93eroZ4Jni2E1el6N+MZjX64aOQ=
+  on:
+    tags: true
