@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from aoch import read_file
+from aoc.helpers import read_file
 
 
 class TestHelpers(unittest.TestCase):
