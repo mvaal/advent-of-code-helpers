@@ -5,7 +5,7 @@ with open("README.rst", "r") as fh:
 
 setuptools.setup(
     name="advent-of-code-helpers",
-    version="0.0.2",
+    version="0.0.3",
     author="Marcus Vaal",
     license="MIT",
     description="Advent of Code helper functions",
