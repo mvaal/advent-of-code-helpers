@@ -7,7 +7,7 @@ install_requires = ['pytest']
 
 setuptools.setup(
     name="advent-of-code-helpers",
-    version="0.0.4",
+    version="0.1.0",
     author="Marcus Vaal",
     license="MIT",
     description="Advent of Code helper functions",
