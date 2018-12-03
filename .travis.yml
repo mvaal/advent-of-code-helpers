@@ -1,15 +1,15 @@
 language: python
 python:
-  - "2.7"
-  - "3.6"
+- '2.7'
+- '3.6'
 install:
-  - python setup.py install
+- python setup.py install
 script:
-  - nose2
+- nose2
 deploy:
   provider: pypi
   user: mvaal
   password:
-    secure: vX7NF56i7iHXrdq5860oppJqY3juyM8t2szzdOB/FdekYy7fkgRBqRnBQ/BNZ9o6i8wtY+8T5OcBQPKy0ftXrVquyZ3cJp7fUbpnWcu66Z/Kg02DSB0D5Cr9SXqAog7yZum+LQS9V1ruXUu9y9OdgxQlgmCPMjPChKpKzBXS7XTsZM2IvMXOkgHgX7V8fKO++C5dgtqXTmOAEyhd4OIVtHMpYDLA8IUxpatvyu2L3PUpY/p8WdR/nU7cutTx+VfJxicGl+XtsvdQ+C4KmqnIM1Bnohf9OObMYS93v5tUWL0t993PXv/DE4y/do5NI21FA8moQQIl3oiktfEHG1vlLwNrNY4gzMljszCjiqMMV+n4wqph1MFgECBlEdSPbZAyFzFpvCINK4r0lnncIJPAyhakx8AxAWWOZR7d+It2qdi0XKuZ4JGVZWl+57YxrFMa3gnF1T6YaE7E8nchVZ+ORoioW//jlIWn999Twi+8ISh3o2WIN9migw1rd8Di683RJAk8IsqRG7ckt8XFD5NvmRkPd7/AcvAVDaUouR/0S6zprDkiQIb8bE7GrHXcQXzvu2JXj9m/lq/bdCU1ze+lNgOifiY7QvrBm9sdEABZmHZMiaegq5CZZkBtuVRKFIfyeB+xNlW+MMrkqvuc93eroZ4Jni2E1el6N+MZjX64aOQ=
+    secure: ef2kUrH/krNPoW3iNYvrMBYt0BnM1u4rAMFj5/WaYZ6FIQbJJRWm8EMrHJILClF/vON4e6Fy6+s2sUu5u4Ul84BIobXNq40IhwLNSAgkW7glB0uOOVUOfEgki/H140ELKyemaJXJJD4baJ5DjOI/UECtHxNpRZ0VDXmsPT5REORTn0U/G54FgtQ7YUuV7/0dZZeKrkx6tXLanWKQZq/NBD/476Z/PsV81kzA25jn90qW34pchM7eEqhXyz/IfqII7Kz+dXYEuz/hWR1Gce0jD079vng/yYUsrCz3vR8fRT5qKyKX3i8SmEN/JUAav9QF6j8r9bttZxloJso4IFe/GM6AdM6MnJk7sNGbM2FxsYvddKzQVjB0+J7FaccMUZ79cxx5wy9soSdzPmDxzb6kDuzSKrK8J0h+UZ3pO50varHtBDTRJ7YfRItzbi5I6wFeYRB+dziWvuopv5w6KhErafIh5flzWSUpDwah2H12/JSY9qnASR7DDX6LSnHaKp1iEr2ZLqgjZZClDCzP9MdGlPhvpP/181Iv6b3v+zXhHh61keU1KsEgfJOCV5f5OcoTOwqJel9dRIUgpNN60aZdY0BgHkfX5kpjmkfoHkWJ2II8hnk58QUshS4TUepLBc9Cp3gyDJU6rZoJrWcr8QpOAYogqt8Lr7gEhxcQ6m5QD/E=
   on:
     tags: true
