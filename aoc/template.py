@@ -4,9 +4,7 @@ from aoc.helpers import output, read_input_from_file
 
 
 class Puzzle(ABC):
-    def __init__(self, part: int, day: int, year: int,
-                 input_file: str = None,
-                 output_dir: str = None) -> None:
+    def __init__(self, part, day, year, input_file=None, output_dir=None):
         self.part = part
         self.day = day
         self.year = year
@@ -31,9 +29,7 @@ class Puzzle(ABC):
 
 
 class Part1(Puzzle):
-    def __init__(self, day: int, year: int,
-                 input_file: str = None,
-                 output_dir: str = None) -> None:
+    def __init__(self, day, year, input_file=None, output_dir=None):
         super().__init__(1, day, year, input_file, output_dir)
 
     @abstractmethod
@@ -42,9 +38,7 @@ class Part1(Puzzle):
 
 
 class Part2(Puzzle):
-    def __init__(self, day: int, year: int,
-                 input_file: str = None,
-                 output_dir: str = None) -> None:
+    def __init__(self, day, year, input_file=None, output_dir=None):
         super().__init__(2, day, year, input_file, output_dir)
 
     @abstractmethod

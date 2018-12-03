@@ -2,7 +2,7 @@ import os
 import pathlib
 
 
-def read_input_from_file(file_path) -> str:
+def read_input_from_file(file_path):
     r""" Reads data from file path as a string.
 
     :param file_path: file path
@@ -14,15 +14,11 @@ def read_input_from_file(file_path) -> str:
         return file.read()
 
 
-def input_lines(puzzle_input: str):
+def input_lines(puzzle_input):
     return puzzle_input.split("\n")
 
 
-def output(result: str,
-           part: int,
-           day: int,
-           year: int,
-           output_dir: str = None):
+def output(result, part, day, year, output_dir=None):
     print(result)
     if output_dir:
         output_file_dir = os.path.join(output_dir, str(year), str(day))

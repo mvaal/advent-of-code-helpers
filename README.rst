@@ -11,7 +11,7 @@ Advent of Code helper functions
 
 .. code-block:: python
 
-   from aoc.helpers import output, read_input_from_file
+   from aoc.helpers import output, read_input_from_file, input_lines
 
 Setup Guide
 -----------

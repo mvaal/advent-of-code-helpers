@@ -5,8 +5,7 @@ from aoc.helpers import input_lines
 
 
 class Part1(template.Part1):
-    def __init__(self, day: int, year: int, input_file: str,
-                 output_dir: str) -> None:
+    def __init__(self, day: int, year: int, input_file: str, output_dir: str):
         super().__init__(day, year, input_file, output_dir)
 
     def solve(self):
@@ -20,8 +19,7 @@ class Part1(template.Part1):
 
 
 class Part2(template.Part2):
-    def __init__(self, day: int, year: int, input_file: str,
-                 output_dir: str) -> None:
+    def __init__(self, day: int, year: int, input_file: str, output_dir: str):
         super().__init__(day, year, input_file, output_dir)
 
     def solve(self):
