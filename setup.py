@@ -3,6 +3,15 @@ import setuptools
 with open("README.rst", "r") as fh:
     long_description = fh.read()
 
+install_requires = []
+tests_requires = [
+    'pytest',
+    'pytest-pep8',
+    'pytest-cov==2.5.0',
+    'python-coveralls',
+    'Pygments'
+]
+
 setuptools.setup(
     name="advent-of-code-helpers",
     version="0.0.3",
@@ -12,15 +21,13 @@ setuptools.setup(
     long_description=long_description,
     long_description_content_type="text/x-rst",
     url="https://github.com/mvaal/advent-of-code-helpers",
+    packages=setuptools.find_packages(),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries"
     ],
-    install_requires=["pytest",
-                      "pytest-pep8",
-                      "pytest-cov==2.5.0",
-                      "python-coveralls",
-                      "Pygments"]
+    install_requires=install_requires,
+    tests_require=tests_requires
 )
