@@ -1,11 +1,13 @@
 language: python
 python:
-- '2.7'
-- '3.6'
+  - '2.7'
+  - '3.6'
 install:
-- python setup.py install
+  - python setup.py install
 script:
-- nose2
+  - py.test aoc --doctest-modules --pep8 aoc -v --cov aoc --cov-report term-missing
+after_success:
+  - coveralls
 deploy:
   provider: pypi
   user: mvaal

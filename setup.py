@@ -18,5 +18,8 @@ setuptools.setup(
         "Operating System :: OS Independent",
         "Topic :: Software Development :: Libraries"
     ],
-    install_requires=["nose2"]
+    install_requires=["pytest",
+                      "pytest-pep8",
+                      "pytest-cov",
+                      "python-coveralls"]
 )
