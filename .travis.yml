@@ -3,6 +3,9 @@ python:
   - '3.6'
 install:
   - python setup.py install
+  - pip install pytest-pep8
+  - pip install pytest-cov==2.5.0
+  - pip install python-coveralls
 script:
   - py.test aoc --doctest-modules --pep8 aoc -v --cov aoc --cov-report term-missing
 after_success:
