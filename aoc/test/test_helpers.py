@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from aoc.helpers import read_file
+from aoc.helpers import read_input_from_file, output
 
 
 class TestHelpers(unittest.TestCase):
@@ -9,6 +9,9 @@ class TestHelpers(unittest.TestCase):
         expected_data = '-1\n-19\n-7'
         file_path = os.path.join(os.path.dirname(__file__),
                                  'resources/input.txt')
-        data = read_file(file_path)
+        data = read_input_from_file(file_path)
         self.assertEqual(expected_data, data,
                          'Data should match expected data.')
+
+    def test(self):
+        output('test', 1, 3, 2018, '.')

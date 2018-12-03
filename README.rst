@@ -8,3 +8,16 @@ Advent of Code helpers
     :target: https://coveralls.io/github/mvaal/advent-of-code-helpers
 
 Advent of Code helper functions
+
+.. code-block:: python
+
+   from aoc.helpers import output, read_input_from_file
+
+Setup Guide
+-----------
+
+Install with pip
+
+.. code-block:: bash
+
+   pip install advent-of-code-helpers

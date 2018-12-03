@@ -13,6 +13,7 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     url="https://github.com/mvaal/advent-of-code-helpers",
     classifiers=[
+        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
@@ -21,5 +22,6 @@ setuptools.setup(
     install_requires=["pytest",
                       "pytest-pep8",
                       "pytest-cov==2.5.0",
-                      "python-coveralls"]
+                      "python-coveralls",
+                      "Pygments"]
 )

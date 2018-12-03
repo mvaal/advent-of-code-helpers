@@ -15,3 +15,6 @@ dist/
 # Intellij
 .idea
 *.iml
+
+# advent-of-code-helpers
+out
