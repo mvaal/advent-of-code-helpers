@@ -13,7 +13,6 @@ setuptools.setup(
     long_description_content_type="text/x-rst",
     url="https://github.com/mvaal/advent-of-code-helpers",
     classifiers=[
-        "Programming Language :: Python :: 2",
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",

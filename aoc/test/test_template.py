@@ -13,7 +13,7 @@ class TestTemplate(unittest.TestCase):
 class Part1(Puzzle):
     expected_result = 'Solved Part 1!'
 
-    def __init__(self, day, year):
+    def __init__(self, day: int, year: int) -> None:
         super().__init__(1, day, year)
 
     def solve(self):
