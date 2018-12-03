@@ -20,6 +20,6 @@ setuptools.setup(
     ],
     install_requires=["pytest",
                       "pytest-pep8",
-                      "pytest-cov",
+                      "pytest-cov==2.5.0",
                       "python-coveralls"]
 )
