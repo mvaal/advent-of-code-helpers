@@ -22,12 +22,14 @@ def output(result: str,
            part: int,
            day: int,
            year: int,
-           output_dir: str = None):
+           output_dir: str = None,
+           file_prefix: str = None):
     print(result)
     if output_dir:
         output_file_dir = os.path.join(output_dir, str(year), str(day))
         pathlib.Path(output_file_dir).mkdir(parents=True, exist_ok=True)
-        output_file_path = os.path.join(output_file_dir,
-                                        '{}.txt'.format(str(part)))
+        file_name = '{}-{}.txt'.format(file_prefix, str(
+            part)) if file_prefix else '{}.txt'.format(str(part))
+        output_file_path = os.path.join(output_file_dir, file_name)
         with open(output_file_path, "a+") as output_file:
             output_file.write('{}\n'.format(result))
