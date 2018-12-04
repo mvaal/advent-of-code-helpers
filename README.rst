@@ -6,6 +6,9 @@ Advent of Code helpers
     :target: https://badge.fury.io/py/advent-of-code-helpers
 .. image:: https://coveralls.io/repos/github/mvaal/advent-of-code-helpers/badge.svg
     :target: https://coveralls.io/github/mvaal/advent-of-code-helpers
+.. image:: https://api.codeclimate.com/v1/badges/29103862e179077a63fc/maintainability
+   :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/maintainability
+   :alt: Maintainability
 
 Advent of Code helper functions
 
