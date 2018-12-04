@@ -23,17 +23,47 @@ Install with pip
 
    pip install advent-of-code-helpers
 
+Helper Usage
+------------
+``read_input_from_file`` reads the data as a single line from a file
+
+.. code-block:: python
+
+    from aoc.helpers import read_input_from_file
+    read_input_from_file('path/to/input_data')
+
+``input_lines`` returns a list of strings from the string input
+
+.. code-block:: python
+
+    from aoc.helpers import input_lines
+    input_lines('single\nstring\ninput')
+
+``output`` prints the result to console and writes to an output file if
+an output directory is provided
+
+.. code-block:: python
+
+    from aoc.helpers import output
+    output('result', part(int), day(int), year(int), output_dir(str), file_prefix(str))
+
 Template Usage
 --------------
+You can specify data from a file using the ``data(input)`` function.
+
+You can specify an output directory for output using the ``output(output)``
+function.  If left empty, it will still print to screen, but will not write
+the result to a file.  If given an output directory, the results will be
+appended to the file so you can easily go back and look at previous results.
+
+Examples
+~~~~~~~~
 .. code-block:: python
 
     from aoc import template
 
 
     class Part1(template.Part1):
-        def __init__(self, day: int, year: int) -> None:
-            super().__init__(day, year)
-
         def solve(self):
             # Read input
             lines = input_lines(self.input())
@@ -61,13 +91,15 @@ More usage in the example_.
 
 .. _example: examples/template_example.py
 
-Template Usage with other libraries
+Template Usage with Other Libraries
 -----------------------------------
 If you want to use your own input reader or a library like advent-of-code-data_,
 you can override the ``input`` method.
 
 .. _advent-of-code-data: https://github.com/wimglenn/advent-of-code-data
 
+Examples
+~~~~~~~~
 .. code-block:: python
 
     from aoc import template
@@ -76,9 +108,6 @@ you can override the ``input`` method.
 
 
     class Part1(template.Part1):
-        def __init__(self, day: int, year: int) -> None:
-            super().__init__(day, year)
-
         def input(self):
             if self.input_file:
                 return super().input()
@@ -96,7 +125,7 @@ you can override the ``input`` method.
 
 
     def main():
-        Part1(2, 2018).output('../out')
+        Part1(1, 2018).output('../out')
 
 
     if __name__ == "__main__":
