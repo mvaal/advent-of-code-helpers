@@ -1,11 +1,13 @@
 Advent of Code helpers
 ======================
-.. image:: https://travis-ci.org/mvaal/advent-of-code-helpers.svg?branch=master
-    :target: https://travis-ci.org/mvaal/advent-of-code-helpers
+.. image:: https://img.shields.io/pypi/pyversions/advent-of-code-helpers.svg
 .. image:: https://badge.fury.io/py/advent-of-code-helpers.svg
     :target: https://badge.fury.io/py/advent-of-code-helpers
-.. image:: https://coveralls.io/repos/github/mvaal/advent-of-code-helpers/badge.svg
-    :target: https://coveralls.io/github/mvaal/advent-of-code-helpers
+.. image:: https://travis-ci.org/mvaal/advent-of-code-helpers.svg?branch=master
+    :target: https://travis-ci.org/mvaal/advent-of-code-helpers
+.. image:: https://api.codeclimate.com/v1/badges/29103862e179077a63fc/test_coverage
+   :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/test_coverage
+   :alt: Test Coverage
 .. image:: https://api.codeclimate.com/v1/badges/29103862e179077a63fc/maintainability
    :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/maintainability
    :alt: Maintainability
