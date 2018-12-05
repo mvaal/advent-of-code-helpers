@@ -2,6 +2,7 @@ Advent of Code helpers
 ======================
 
 .. image:: https://img.shields.io/pypi/pyversions/advent-of-code-helpers.svg
+    :target: https://github.com/mvaal/advent-of-code-helpers
 .. image:: https://badge.fury.io/py/advent-of-code-helpers.svg
     :target: https://badge.fury.io/py/advent-of-code-helpers
 .. image:: https://travis-ci.org/mvaal/advent-of-code-helpers.svg?branch=master
