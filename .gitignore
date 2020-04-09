@@ -18,3 +18,6 @@ dist/
 
 # advent-of-code-helpers
 out
+
+.coverage
+coverage.xml
