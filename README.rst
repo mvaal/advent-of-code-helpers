@@ -5,7 +5,7 @@ Advent of Code helpers
     :target: https://github.com/mvaal/advent-of-code-helpers
 .. image:: https://badge.fury.io/py/advent-of-code-helpers.svg
     :target: https://badge.fury.io/py/advent-of-code-helpers
-.. image:: https://github.com/actions/hello-world/workflows/Greet%20Everyone/badge.svg
+.. image:: https://github.com/mvaal/advent-of-code-helpers/workflows/Python%20application/badge.svg
     :target: https://github.com/mvaal/advent-of-code-helpers
 .. image:: https://travis-ci.org/mvaal/advent-of-code-helpers.svg?branch=master
     :target: https://travis-ci.org/mvaal/advent-of-code-helpers
