@@ -31,3 +31,5 @@ jobs:
           CC_TEST_REPORTER_ID: 3c3992cbc77368ed5b34cadf6afb83d8a201fc5b250c93a519a550bedb215d8c
         with:
           coverageCommand: py.test aoc --doctest-modules --pep8 aoc -v --cov aoc --cov-report xml
+          coverageLocations:
+            "${{github.workspace}}/coverage.xml:coverage.py"
