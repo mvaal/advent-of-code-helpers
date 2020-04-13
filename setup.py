@@ -3,6 +3,7 @@ import setuptools_scm
 
 
 def local_scheme(version):
+    print(version)
     if version.branch == 'master' and not version.dirty:
         return ''
     return setuptools_scm.version.get_local_node_and_date(version)
