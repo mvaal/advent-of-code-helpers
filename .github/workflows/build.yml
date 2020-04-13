@@ -16,8 +16,6 @@ jobs:
           python-version: 3.x
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip
-          pip install setuptools setuptools_scm
           python setup.py install
       - name: pytest and coverage
         run: |
@@ -36,7 +34,10 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # Only v1 works that I can figure out, v2 doesn't pull tags properly
+      - uses: actions/checkout@v2
+      - run: |
+          git fetch --prune --unshallow
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
@@ -44,7 +45,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install setuptools wheel setuptools_scm
+          pip install setuptools wheel
           python setup.py sdist bdist_wheel bdist_egg
       - name: Publish distribution 📦 to Test PyPI
         uses: pypa/gh-action-pypi-publish@37e305e7413032d8422456179fee28fac7d25187
