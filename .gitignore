@@ -13,6 +13,7 @@ dist/
 *.egg-info/
 .eggs
 version.py
+**/__pycache__
 
 # IntelliJ
 .idea
