@@ -1,4 +1,4 @@
-import setuptools
+from setuptools import setup, find_packages
 
 with open("README.rst", "r") as fh:
     readme = fh.read()
@@ -8,18 +8,25 @@ with open('HISTORY.rst') as history_file:
 
 install_requires = []
 
-test_requirements = ['pytest>=3']
+test_requires = ['pytest>=3']
 
-setuptools.setup(
+setup(
     name="advent-of-code-helpers",
-    version="0.1.1",
+    use_scm_version={
+        'write_to': 'aoc/version.py',
+        'write_to_template': '__version__ = "{version}"',
+        'tag_regex': r'^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$',
+    },
+    setup_requires=['setuptools_scm'],
     author="Marcus Vaal",
     license="MIT",
     description="Advent of Code helper functions",
-    long_description= readme + '\n\n' + history,
+    long_description=readme + '\n\n' + history,
     long_description_content_type="text/x-rst",
     url="https://github.com/mvaal/advent-of-code-helpers",
-    packages=setuptools.find_packages(),
+    packages=find_packages(
+        exclude=["*.test", "*.test.*", "test.*", "test", ".github"]
+    ),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
@@ -27,5 +34,5 @@ setuptools.setup(
         "Topic :: Software Development :: Libraries"
     ],
     install_requires=install_requires,
-    test_requirements=test_requirements
+    tests_require=test_requires
 )

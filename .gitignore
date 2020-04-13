@@ -11,8 +11,10 @@ venv.bak/
 build/
 dist/
 *.egg-info/
+.eggs
+version.py
 
-# Intellij
+# IntelliJ
 .idea
 *.iml
 
