@@ -14,7 +14,7 @@ setup(
     name="advent-of-code-helpers",
     use_scm_version={
         'write_to': 'aoc/version.py',
-        'write_to_template': '__version__ = "{version}"',
+        'write_to_template': '__version__ = "{version}"\n',
         'tag_regex': r'^(?P<prefix>v)?(?P<version>[^\+]+)(?P<suffix>.*)?$',
     },
     setup_requires=['setuptools_scm'],
