@@ -1,7 +1,7 @@
 import os
 import unittest
 
-from aoc.helpers import read_input_from_file, output, input_lines
+from src.aoc.helpers import read_input_from_file, input_lines
 
 
 class TestHelpers(unittest.TestCase):

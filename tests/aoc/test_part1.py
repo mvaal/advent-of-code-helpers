@@ -1,6 +1,6 @@
 import unittest
 
-from aoc import template
+from src.aoc import template
 
 
 class TestPart1(unittest.TestCase):

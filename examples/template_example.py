@@ -1,7 +1,7 @@
 import os
 
-from aoc import template
-from aoc.helpers import input_lines
+from src.aoc import template
+from src.aoc.helpers import input_lines
 
 
 class Part1(template.Part1):

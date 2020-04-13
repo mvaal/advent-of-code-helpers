@@ -1,7 +1,7 @@
 import os
 from abc import ABC, abstractmethod
 
-from aoc.helpers import output, read_input_from_file
+from src.aoc.helpers import output, read_input_from_file
 
 
 class Puzzle(ABC):
