@@ -27,7 +27,11 @@ jobs:
     needs: release
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v1 # Only v1 works that I can figure out, v2 doesn't pull tags properly
+      - uses: actions/checkout@v2
+      - name: Fetch history and tags
+        run: |
+          git fetch --prune --unshallow
+          git fetch --depth=1 origin +refs/tags/*:refs/tags/*
       - name: Set up Python
         uses: actions/setup-python@v1
         with:
