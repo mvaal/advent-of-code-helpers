@@ -10,7 +10,6 @@ def local_scheme(version):
 
 
 setup(
-    setup_requires=['setuptools_scm'],
     use_scm_version={
         'local_scheme': local_scheme,
         'write_to': 'src/aoc/version.py',
