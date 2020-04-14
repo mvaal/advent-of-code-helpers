@@ -17,10 +17,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Set up Python 3.6
+      - name: Set up Python
         uses: actions/setup-python@v1
         with:
-          python-version: 3.6
+          python-version: 3.x
       - name: Install dependencies
         run: |
           python setup.py install
@@ -29,4 +29,4 @@ jobs:
           python -m pip install --upgrade pip
           pip install pytest-pep8
           pip install pytest-cov==2.5.0
-          py.test aoc --doctest-modules --pep8 aoc -v --cov aoc --cov-report xml
+          py.test tests --doctest-modules --pep8 src/aoc -v --cov src/aoc --cov-report xml
