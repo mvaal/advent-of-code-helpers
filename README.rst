@@ -7,12 +7,11 @@ Advent of Code helpers
     :target: https://badge.fury.io/py/advent-of-code-helpers
 .. image:: https://github.com/mvaal/advent-of-code-helpers/workflows/build/badge.svg
     :target: https://github.com/mvaal/advent-of-code-helpers
-.. image:: https://api.codeclimate.com/v1/badges/29103862e179077a63fc/test_coverage
-   :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/test_coverage
-   :alt: Test Coverage
+.. image:: https://codecov.io/gh/mvaal/advent-of-code-helpers/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/mvaal/advent-of-code-helpers
 .. image:: https://api.codeclimate.com/v1/badges/29103862e179077a63fc/maintainability
-   :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/maintainability
-   :alt: Maintainability
+    :target: https://codeclimate.com/github/mvaal/advent-of-code-helpers/maintainability
+    :alt: Maintainability
 
 Advent of Code helper functions
 
