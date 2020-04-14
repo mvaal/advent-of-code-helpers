@@ -9,8 +9,6 @@ on:
       - master
     tags:
       - '!*' # Do not execute on tags
-    paths:
-      - '!*.rst'
 
 jobs:
   test:
