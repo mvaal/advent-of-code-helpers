@@ -28,3 +28,7 @@ jobs:
         run: |
           pip install pytest-pep8 pytest-cov==2.5.0
           py.test tests --doctest-modules --pep8 src/aoc -v --cov src/aoc --cov-report xml
+      - name: Coveralls
+        uses: coverallsapp/github-action@v1.0.1
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}
