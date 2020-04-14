@@ -32,6 +32,8 @@ jobs:
           coverageCommand: py.test tests --doctest-modules --pep8 src/aoc -v --cov src/aoc --cov-report xml
           coverageLocations:
             "${{github.workspace}}/coverage.xml:coverage.py"
+      - name: Upload coverate to codecov
+        uses: codecov/codecov-action@v1
   test-deploy:
     needs: build
     runs-on: ubuntu-latest

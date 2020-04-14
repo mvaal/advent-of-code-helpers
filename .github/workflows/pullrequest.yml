@@ -28,7 +28,5 @@ jobs:
         run: |
           pip install pytest-pep8 pytest-cov==2.5.0
           py.test tests --doctest-modules --pep8 src/aoc -v --cov src/aoc --cov-report xml
-      - name: Codecov
+      - name: Upload coverate to codecov
         uses: codecov/codecov-action@v1
-        with:
-          token: ${{ secrets.CODECOV_TOKEN }} # not required for public repos
